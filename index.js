@@ -84,11 +84,13 @@
 
 // while-notes
 // let i=1;
-// while(i<10)
-// {
-//     console.log(i);
-//     i++;
-// }
+ while(i<10)
+ {
+     console.log(i);
+     i++;
+ }
+
+//add
 
 //do-while notes
 let i=1;
