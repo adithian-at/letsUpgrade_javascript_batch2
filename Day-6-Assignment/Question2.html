@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment 3 Question 2</title>
+    <style>
+        *{
+            margin : 0px;
+            padding : 0px;
+        }
+
+        body{
+            background-image:url("https://wallpapercave.com/wp/wp2655665.jpg") ;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .data{
+            font-family: Segoe UI;
+            height : 500px;
+            width  : 70%;
+            margin-left: 13%;
+            margin-top: 70px;
+            background-color: gainsboro;
+            padding: 20px;
+        }
+
+        input{
+            height: 30px;
+            font-family: serif;
+            text-align: center;
+        }
+
+
+        button {
+        padding: 5px;
+      }
+      
+        .table {
+            width: 100%;
+            margin-top: 20px;
+      }
+
+      th,
+      td {
+        height: 30px;
+        text-align: center;
+        font-family: Calibri;
+      }
+      h1{
+          font-family: Verdana;
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="data">
+        <h1>Bus Management</h1>
+        <div class="form">
+            <h4>Add your new bus here</h4>
+            <form onsubmit="addbus(event)">
+                <input type="text" required placeholder="Name" id="name" />
+                <input type="text" required placeholder="Source" id="source" />
+                <input type="text" required placeholder="Destsination" id="destination" />
+                <input type="text" required placeholder=" Bus Number" id="busnum" />
+                <input type="number" required placeholder="Passenger Capacity" id="passcapacity" />
+                <button type="submit">Add Bus</button>
+              </form>
+        </div><br>
+        <div class="Searchbox">
+            <h4>Search your bus here</h4>
+            <input type="text" id="searchSource" placeholder="From" onkeyup=searchbySource() />
+            <input type="text" id="searchDestination" placeholder="To" onkeyup=searchbyDestination() />
+        </div><br>
+    <h4>Available Bus</h4>
+    <table border="1" class="table" cellspacing="0">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Bus Number</th>
+                <th>Passenger Capacity</th>
+            </tr> 
+        </thead>
+        <tbody class="tdata"></tbody>
+        
+    </table>
+    </div>
+
+    <script src="Question2.js"></script>
+
+</body>
+</html>
